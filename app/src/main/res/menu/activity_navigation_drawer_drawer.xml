@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icon_home"
+            android:title="Thi thử" />
+        <item
+            android:id="@+id/nav_time"
+            android:icon="@drawable/icon_time"
+            android:title="Mức độ hoàn thành" />
+        <item
+            android:id="@+id/nav_userr"
+            android:icon="@drawable/icon_userr"
+            android:title="Tài khoản" />
+
+    </group>
+    <item android:title="Hỗ Trợ">
+        <menu>
+            <item
+                android:id="@+id/nav_out"
+                android:icon="@drawable/icon_out"
+                android:title="Thoát"></item>
+        </menu>
+    </item>
+
+
+</menu>

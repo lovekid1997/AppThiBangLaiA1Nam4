@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        android:background="@color/colorThanhDangNhap"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+        <EditText
+            android:id="@+id/editTextHoTen"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint=" Họ Tên"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/textViewNamSinh"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+           android:text="Ngày tháng năm sinh..."
+            android:inputType="datetime"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/textViewGioiTinh"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+           android:text="Giới tính"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/editTextTaiKhoan"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Tài khoản..."
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/editTextMatKhau"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu..."
+            android:inputType="textPassword"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+
+            android:id="@+id/buttonDangKyDialog"
+
+            android:background="@drawable/custom_button"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/buttonHuyDangKyDialog"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="#242404"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorThanhDangNhap"
+            android:gravity="center"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</LinearLayout>

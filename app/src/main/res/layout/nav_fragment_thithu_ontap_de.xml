@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texyaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewCauHoiOnTap_De"
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        app:srcCompat="@drawable/backgrounddangnhap" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Đáp án trả lời:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxCau1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Câu 1" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCau2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Câu 2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxCau3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Câu 3" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCau4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Câu 4" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorThanhDangNhap"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/buttonOnTap_De_CauTruoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Câu trước"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonOnTap_De_XemDapAn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đáp án"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonOnTap_De_CauTiepTheo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Câu tiếp theo"
+                android:textAllCaps="false"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/buttonOnTap_De_NopBAi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_quaylai"
+                android:text="Nộp bài"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/buttonOnTap_De_QuayLai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_button_quaylai"
+                android:text="Quay lại"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
